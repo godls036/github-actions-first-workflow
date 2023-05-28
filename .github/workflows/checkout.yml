@@ -14,3 +14,9 @@ jobs:
                   path: our-source
             - run: ls -al
             - run: ls -al our-source
+            - name: checkout github actions/checkout
+              uses: actions/checkout@v3
+              with:
+                  repository: actions/checkout
+                  ref: v3
+            - run: ls -al
